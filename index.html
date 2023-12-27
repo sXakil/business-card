@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css"
+      integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="ui center aligned container segment">
+      <div class="column">
+        <canvas id="canvas" width="624" height="320"></canvas>
+        <img src="VC.jpg" alt="AVC" id="source" style="display: none" />
+      </div>
+      <div class="column">
+        <form class="ui form">
+          <div class="two fields">
+            <div class="field">
+              <label>First name</label>
+              <input type="text" placeholder="First name" id="fName" />
+            </div>
+            <div class="field">
+              <label>Last name</label>
+              <input
+                type="text"
+                placeholder="Last name /  Nickname"
+                id="lName"
+              />
+            </div>
+          </div>
+          <div class="two fields">
+            <div class="field">
+              <label>Job title</label>
+              <input type="text" placeholder="(e.g Consultant)" id="position" />
+            </div>
+            <div class="field">
+              <label>Phone number</label>
+              <input
+                type="text"
+                placeholder="(e.g +88018XXXXXXXX)"
+                id="phone"
+              />
+            </div>
+            <div id="qrcode" style="display: none"></div>
+          </div>
+        </form>
+      </div>
+      <div class="column">
+        <button
+          class="ui left labeled icon primary button loading"
+          id="download"
+        >
+          <i class="down arrow icon"></i>
+          Download
+        </button>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"
+      integrity="sha512-Xo0Jh8MsOn72LGV8kU5LsclG7SUzJsWGhXbWcYs2MAmChkQzwiW/yTQwdJ8w6UA9C6EVG18GHb/TrYpYCjyAQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="//cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
